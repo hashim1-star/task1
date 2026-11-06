@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: white;
+        }
+
+        .container {
+            width: 820px;
+            height: 580px;
+            border: 3px solid black;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .red {
+            background: red;
+            height: 72px;
+            border: 2px solid black;
+            height: 75px;
+        }
+
+        .blue {
+            height: 80px;
+            background: #13b8d0;
+            border: 2px solid black;
+        }
+
+        .middle {
+            flex: 1;
+            display: flex;
+            gap: 17px;
+            min-height: 0;
+        }
+
+        .left {
+            flex: 1.7;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .yellow {
+            flex: 1;
+            background: #ffbd55;
+            border: 2px solid black;
+        }
+
+        .orange {
+            flex: 1;
+            background: #ff8b43;
+            border: 2px solid black;
+        }
+
+        .pink {
+            flex: 1;
+            background: #f454b5;
+            border: 2px solid black;
+        }
+
+        .gray {
+            height: 82px;
+            background: #777777;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="red"></div>
+
+        <div class="blue"></div>
+
+        <div class="middle">
+            <div class="left">
+                <div class="yellow"></div>
+                <div class="orange"></div>
+            </div>
+
+            <div class="pink"></div>
+        </div>
+
+        <div class="gray"></div>
+
+    </div>
+
+</body>
+</html>
